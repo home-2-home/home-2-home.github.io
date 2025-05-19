@@ -2,112 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apartments - Home2Home Boutique Apartments</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <script defer src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apartments | Home2Home Boutique Apartments</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">Home2Home</div>
-      <ul class="nav-links">
+    <nav>
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="apartments.html" class="active">Apartments</a></li>
+        <li><a href="apartments.html">Apartments</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
     </nav>
   </header>
-
-  <main class="page-content">
+  <main>
     <h1>Our Apartments</h1>
-    <p>Discover our 14 beautiful apartments, ranging from cozy studios (T0) to spacious two-bedroom apartments (T2).</p>
+    <div class="apt-card">[T0 Apartment Placeholder]</div>
+    <div class="apt-card">[T1 Apartment Placeholder]</div>
+    <div class="apt-card">[T2 Apartment Placeholder]</div>
 
-    <section class="apartments-list">
-      <!-- Apartment placeholders: Repeat this block for each apartment -->
-      <article class="apartment-item">
-        <h2>Apartment T0 - Cozy Studio</h2>
-        <div class="apartment-gallery">
-          <img src="https://via.placeholder.com/400x250?text=Apartment+T0+Photo+1" alt="Apartment T0 Photo 1" />
-          <img src="https://via.placeholder.com/400x250?text=Apartment+T0+Photo+2" alt="Apartment T0 Photo 2" />
-          <img src="https://via.placeholder.com/400x250?text=Apartment+T0+Photo+3" alt="Apartment T0 Photo 3" />
-        </div>
-        <p>Description placeholder: A cozy studio perfect for solo travelers or couples.</p>
-        <p>Amenities placeholder: WiFi, Air conditioning, Kitchenette.</p>
-        <p>Price placeholder: Starting at €70/night</p>
-        <p>Book on: 
-          <a href="#" target="_blank" rel="noopener">Airbnb</a> | 
-          <a href="#" target="_blank" rel="noopener">Booking.com</a>
-        </p>
-      </article>
+    <section class="map">[Google Map Placeholder]</section>
 
-      <!-- Repeat for more apartments here, or you can duplicate this article block -->
-
-      <!-- ... -->
-
-    </section>
-
-    <section class="map-booking">
-      <h2>Find Us in Porto</h2>
-      <div class="map-container">
-        <!-- Google Maps Embed -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.224581429761!2d-8.615696484652995!3d41.14945117929308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465142a15ee33%3A0x8df19876b8c88ee0!2sPorto%2C%20Portugal!5e0!3m2!1sen!2sus!4v1688570975743!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-
-      <div class="booking-form">
-        <h2>Book Direct & Save!</h2>
-        <p>Contact us today to get a special discount for direct bookings.</p>
-        <form>
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email address" required />
-
-          <label for="apartment">Apartment Interested In</label>
-          <select id="apartment" name="apartment" required>
-            <option value="" disabled selected>Select an apartment</option>
-            <option value="T0">Apartment T0 - Studio</option>
-            <option value="T1">Apartment T1 - One Bedroom</option>
-            <option value="T2">Apartment T2 - Two Bedroom</option>
-            <!-- Add more options as needed -->
-          </select>
-
-          <label for="dates">Preferred Dates</label>
-          <input type="text" id="dates" name="dates" placeholder="e.g. June 1 - June 7" required />
-
-          <label for="message">Additional Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Any questions or requests?"></textarea>
-
-          <button type="submit" class="btn-primary">Send Enquiry</button>
-        </form>
-      </div>
+    <section id="booking">
+      <h2>Book Directly & Save</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Email" />
+        <input type="date" />
+        <input type="date" />
+        <select><option>T0</option><option>T1</option><option>T2</option></select>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
     </section>
   </main>
-
   <footer>
-    <div class="footer-content">
-      <p>© 2025 Home2Home Boutique Apartments. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a> | 
-        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">Facebook</a> | 
-        <a href="#" aria-label="Airbnb" target="_blank" rel="noopener">Airbnb</a> | 
-        <a href="#" aria-label="Booking.com" target="_blank" rel="noopener">Booking.com</a>
-      </div>
-    </div>
+    <p>&copy; 2025 Home2Home Boutique Apartments</p>
   </footer>
 </body>
 </html>
