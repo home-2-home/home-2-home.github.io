@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Home2Home Boutique Apartments</title>
+  <link rel="stylesheet" href="style_new.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index_new.html">Home2Home</a>
+      </div>
+      <div class="nav-menu">
+        <a href="index_new.html" class="nav-link">Home</a>
+        <a href="apartments_new.html" class="nav-link">Apartments</a>
+        <a href="about_new.html" class="nav-link">About</a>
+        <a href="amenities.html" class="nav-link">Amenities</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Porto street view" class="hero-image">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Get in Touch</h1>
+      <p class="hero-subtitle">We're here to help make your Porto stay perfect</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2>Let's Plan Your Stay</h2>
+          <p class="lead-text">
+            Whether you're checking availability, need local recommendations, or have questions about our apartments, we're here to help create your perfect Porto experience.
+          </p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">📧</div>
+              <div class="method-details">
+                <h3>Email Us</h3>
+                <p>hello@home2home.pt</p>
+                <span>We respond within 2 hours</span>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">📱</div>
+              <div class="method-details">
+                <h3>WhatsApp</h3>
+                <p>+351 XXX XXX XXX</p>
+                <span>Quick responses for urgent needs</span>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">📞</div>
+              <div class="method-details">
+                <h3>Phone</h3>
+                <p>+351 XXX XXX XXX</p>
+                <span>Daily 9:00 - 20:00 (GMT+1)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-connect">
+            <h3>Follow Our Journey</h3>
+            <div class="social-links">
+              <a href="#" class="social-link-large">
+                <span class="social-icon">📷</span>
+                <div class="social-info">
+                  <strong>Instagram</strong>
+                  <span>Daily Porto inspiration</span>
+                </div>
+              </a>
+              <a href="#" class="social-link-large">
+                <span class="social-icon">👥</span>
+                <div class="social-info">
+                  <strong>Facebook</strong>
+                  <span>Community updates</span>
+                </div>
+              </a>
+              <a href="#" class="social-link-large">
+                <span class="social-icon">🏠</span>
+                <div class="social-info">
+                  <strong>Airbnb</strong>
+                  <span>Guest reviews</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-header">
+              <h3>Send us a Message</h3>
+              <p>Tell us about your travel plans and we'll get back to you soon</p>
+            </div>
+            
+            <div class="form-group">
+              <label for="inquiry-type">I'm interested in:</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">Select your inquiry type</option>
+                <option value="booking">Booking an apartment</option>
+                <option value="availability">Checking availability</option>
+                <option value="rates">Special rates & packages</option>
+                <option value="recommendations">Local recommendations</option>
+                <option value="support">Guest support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin">
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests">
+                  <option value="">Select guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="apartment-type">Preferred Apartment</label>
+                <select id="apartment-type" name="apartment-type">
+                  <option value="">Any apartment type</option>
+                  <option value="t0">T0 Studio</option>
+                  <option value="t1">T1 One Bedroom</option>
+                  <option value="t2">T2 Two Bedroom</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel plans, special requests, or any questions you have..." required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Send me Porto travel tips and Home2Home updates</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            
+            <div class="form-note">
+              <p>We typically respond within 2 hours during business hours. For urgent inquiries, please call or WhatsApp us directly.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Map Section -->
+  <section class="location-section">
+    <div class="container">
+      <div class="location-layout">
+        <div class="location-info">
+          <h2>Find Us in Cedofeita</h2>
+          <p class="lead-text">
+            Our apartments are nestled in Porto's most creative neighborhood, where art galleries meet cozy cafes and local life thrives.
+          </p>
+          
+          <div class="address-card">
+            <h3>Our Address</h3>
+            <p>
+              Rua de Cedofeita<br>
+              4050-180 Porto<br>
+              Portugal
+            </p>
+          </div>
+          
+          <div class="transport-info">
+            <h3>Getting Here</h3>
+            <ul>
+              <li><strong>From Airport:</strong> 20 minutes by Metro (Purple Line to Trindade, then Yellow Line to Bolhão)</li>
+              <li><strong>From Train Station:</strong> 10 minutes walk from São Bento Station</li>
+              <li><strong>By Metro:</strong> Bolhão Station (5 minutes walk)</li>
+              <li><strong>Parking:</strong> Public parking available nearby</li>
+            </ul>
+          </div>
+          
+          <div class="nearby-attractions">
+            <h3>What's Nearby</h3>
+            <ul>
+              <li>Livraria Lello (5 min walk)</li>
+              <li>Crystal Palace Gardens (8 min walk)</li>
+              <li>Rua de Miguel Bombarda (2 min walk)</li>
+              <li>Clérigos Tower (7 min walk)</li>
+              <li>Ribeira District (15 min walk)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <!-- Placeholder for Google Maps -->
+          <div class="map-placeholder">
+            <div class="map-content">
+              <h3>Interactive Map</h3>
+              <p>Explore our neighborhood and discover nearby attractions, restaurants, and cultural sites.</p>
+              <div class="map-image">
+                <img src="https://images.unsplash.com/photo-1586281010281-31dd4ad429bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Porto map view">
+              </div>
+              <button class="btn btn-outline">View Full Map</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Contact -->
+  <section class="emergency-contact">
+    <div class="container">
+      <div class="emergency-card">
+        <div class="emergency-icon">🚨</div>
+        <div class="emergency-content">
+          <h3>24/7 Emergency Support</h3>
+          <p>For urgent matters during your stay, our local team is available around the clock.</p>
+          <div class="emergency-details">
+            <span class="emergency-number">+351 XXX XXX XXX</span>
+            <span class="emergency-note">Emergency hotline for current guests</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Home2Home</h3>
+          <p>Boutique apartments in the heart of Porto's creative district.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Airbnb</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="apartments_new.html">Apartments</a></li>
+            <li><a href="about_new.html">About Us</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Booking Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Cedofeita, Porto<br>Portugal</p>
+          <p>hello@home2home.pt</p>
+          <p>+351 XXX XXX XXX</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Home2Home Boutique Apartments. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
